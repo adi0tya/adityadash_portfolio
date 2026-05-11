@@ -191,7 +191,7 @@ export default function About() {
             {/* Stats */}
             <div className="grid grid-cols-2 gap-3">
               <StatCard value="2nd"  sub="Year · BCA Program"       custom={2}   inView={inView} />
-              <StatCard value="'27"  sub="Graduation: 2027"           custom={2.3} inView={inView} />
+              <StatCard value="2027"  sub="Graduation Year"           custom={2.3} inView={inView} />
               <StatCard value="15+"  sub="Languages & Tools"         custom={2.6} inView={inView} />
               <StatCard value="MERN" sub="Primary Stack"             custom={2.9} inView={inView} />
             </div>

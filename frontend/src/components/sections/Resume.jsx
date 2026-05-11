@@ -87,7 +87,7 @@ export default function Resume() {
               style={{ display: 'flex', gap: '10px', flexWrap: 'wrap', flexShrink: 0 }}
             >
               <motion.a
-                href="/resume.pdf"
+                href="/Aditya_Dash_Resume.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="btn-secondary"
@@ -97,10 +97,10 @@ export default function Resume() {
                 <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
                   <path d="M1 7h12M7 1v12" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round"/>
                 </svg>
-                View
+                View Resume
               </motion.a>
               <motion.a
-                href="/resume.pdf"
+                href="/Aditya_Dash_Resume.pdf"
                 download
                 className="btn-primary"
                 style={{ fontSize: '12px', padding: '9px 18px' }}
@@ -110,7 +110,7 @@ export default function Resume() {
                   <path d="M7 1v8M4.5 6.5L7 9l2.5-2.5" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round"/>
                   <path d="M1 11v.5a1 1 0 001 1h10a1 1 0 001-1V11" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round"/>
                 </svg>
-                Download
+                Download Resume
               </motion.a>
             </motion.div>
           </div>

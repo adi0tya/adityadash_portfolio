@@ -184,7 +184,7 @@ export default function Hero() {
               </svg>
               See My Work
             </button>
-            <a href="/Adi-cv.pdf" download className="btn-secondary">
+            <a href="/Aditya_Dash_Resume.pdf" download className="btn-secondary">
               <svg width="15" height="15" viewBox="0 0 15 15" fill="none">
                 <path d="M7.5 1v9M5 7.5l2.5 2.5 2.5-2.5" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round"/>
                 <path d="M1.5 11.5v1a1 1 0 001 1h10a1 1 0 001-1v-1" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round"/>
