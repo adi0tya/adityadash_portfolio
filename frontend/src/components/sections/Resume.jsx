@@ -14,7 +14,7 @@ export default function Resume() {
   const inView = useInView(ref, { once: true, margin: '-60px' })
 
   return (
-    <section id="resume" className="relative py-16 px-4 sm:px-6" ref={ref}>
+    <section id="resume" className="relative py-20 px-4" ref={ref}>
       <div className="absolute inset-0 pointer-events-none" style={{
         background: 'radial-gradient(ellipse 60% 50% at 50% 50%, rgba(201,162,39,0.05) 0%, transparent 80%)',
       }} />
@@ -28,7 +28,7 @@ export default function Resume() {
           </motion.p>
           <motion.h2
             variants={fadeUp} initial="hidden" animate={inView ? 'visible' : 'hidden'} custom={0.1}
-            style={{ fontSize: 'clamp(2rem, 5vw, 3.2rem)', fontWeight: 700, lineHeight: 1.05, margin: '0 0 16px' }}
+            style={{ fontSize: 'clamp(1.8rem, 4vw, 2.8rem)', fontWeight: 700, lineHeight: 1.05, margin: '0 0 16px' }}
           >
             <span style={{ color: 'var(--text-primary)' }}>PROFESSIONAL </span>
             <span style={{ color: 'rgba(255,255,255,0.15)' }}>CREDENTIALS</span>
@@ -40,20 +40,9 @@ export default function Resume() {
         {/* Top Control Panel */}
         <motion.div
           variants={fadeUp} initial="hidden" animate={inView ? 'visible' : 'hidden'} custom={0.3}
-          style={{
-            display: 'flex',
-            justifyContent: 'space-between',
-            alignItems: 'center',
-            gap: '16px',
-            flexWrap: 'wrap',
-            padding: '16px 20px',
-            borderRadius: '16px',
-            background: 'rgba(13,17,23,0.6)',
-            border: '1px solid rgba(201,162,39,0.12)',
-            backdropFilter: 'blur(16px)',
-          }}
+          className="resume-control-panel"
         >
-          <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+          <div className="resume-status">
             <span style={{
               width: '8px', height: '8px', borderRadius: '50%', background: 'var(--gold)',
               boxShadow: '0 0 8px var(--gold)',
@@ -63,7 +52,7 @@ export default function Resume() {
             </span>
           </div>
 
-          <div style={{ display: 'flex', gap: '10px', flexWrap: 'wrap' }}>
+          <div className="resume-buttons">
             {/* View Printable HTML */}
             <motion.a
               href="/Aditya_Dash_Resume.html"
