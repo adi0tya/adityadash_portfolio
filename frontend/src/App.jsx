@@ -3,6 +3,7 @@ import Hero from './components/sections/Hero'
 import About from './components/sections/About'
 import Skills from './components/sections/Skills'
 import Projects from './components/sections/Projects'
+import Resume from './components/sections/Resume'
 import Contact from './components/sections/Contact'
 import Footer from './components/ui/Footer'
 import ShardTransition from './components/ui/ShardTransition'
@@ -33,6 +34,8 @@ export default function App() {
         <Skills />
         <ShardTransition id="shard-2" />
         <Projects />
+        <Divider />
+        <Resume />
         <Divider gold />
         <Contact />
       </main>

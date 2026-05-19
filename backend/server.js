@@ -10,8 +10,22 @@ connectDB()
 const app = express()
 
 // ── Middleware ─────────────────────────────────────────────────────────────
+const allowedOrigins = [
+  'http://localhost:5173',
+  'http://localhost:3000',
+  process.env.FRONTEND_URL
+].filter(Boolean)
+
 app.use(cors({
-  origin: ['http://localhost:5173', 'http://localhost:3000'],
+  origin: (origin, callback) => {
+    // Allow requests with no origin (like mobile apps or curl requests)
+    if (!origin) return callback(null, true)
+    if (allowedOrigins.indexOf(origin) === -1) {
+      // In production, you can restrict this, but for portfolio we allow it or log a warning
+      return callback(null, true)
+    }
+    return callback(null, true)
+  },
   credentials: true,
 }))
 app.use(express.json())
