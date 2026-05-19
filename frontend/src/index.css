@@ -344,3 +344,18 @@ img, svg, canvas, video {
   }
 }
 
+/* ── Hardware acceleration for 120fps scrolling and animations ── */
+.glass, 
+.resume-control-panel, 
+.btn-primary, 
+.btn-secondary, 
+.skills-grid > div, 
+.flex.flex-col.gap-3 > a, 
+.resume-buttons a {
+  transform: translateZ(0);
+  will-change: transform, opacity;
+  backface-visibility: hidden;
+  perspective: 1000px;
+}
+
+
