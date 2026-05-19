@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aditya Dash - Resume</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        @page {
+            size: A4;
+            margin: 0.5in 0.6in;
+        }
+        
+        body {
+            font-family: 'Calibri', 'Segoe UI', Arial, sans-serif;
+            line-height: 1.4;
+            color: #2c2c2c;
+            width: 210mm;
+            min-height: 297mm;
+            margin: 0 auto;
+            padding: 15mm 18mm;
+            background: white;
+            font-size: 10.5pt;
+        }
+        
+        h1 {
+            font-size: 26pt;
+            font-weight: 700;
+            text-align: center;
+            margin-bottom: 4pt;
+            color: #1a1a1a;
+            letter-spacing: 0.5pt;
+        }
+        
+        .contact-info {
+            text-align: center;
+            font-size: 9.5pt;
+            margin-bottom: 2pt;
+            color: #333;
+        }
+        
+        .links {
+            text-align: center;
+            font-size: 9pt;
+            margin-bottom: 12pt;
+            color: #333;
+        }
+        
+        h2 {
+            font-size: 12pt;
+            font-weight: 700;
+            margin-top: 10pt;
+            margin-bottom: 5pt;
+            padding-bottom: 2pt;
+            border-bottom: 1.5pt solid #1a1a1a;
+            color: #1a1a1a;
+            text-transform: uppercase;
+            letter-spacing: 0.5pt;
+        }
+        
+        h2:first-of-type {
+            margin-top: 8pt;
+        }
+        
+        .project-header {
+            margin-top: 6pt;
+            margin-bottom: 3pt;
+        }
+        
+        .project-title {
+            font-size: 10.5pt;
+            font-weight: 700;
+            color: #1a1a1a;
+        }
+        
+        .project-subtitle {
+            font-size: 9.5pt;
+            font-style: italic;
+            color: #444;
+        }
+        
+        .project-tech {
+            font-size: 9pt;
+            font-style: italic;
+            color: #555;
+            margin-top: 1pt;
+        }
+        
+        ul {
+            margin-left: 18pt;
+            margin-bottom: 6pt;
+            padding-left: 0;
+        }
+        
+        li {
+            font-size: 9.5pt;
+            margin-bottom: 2pt;
+            color: #2c2c2c;
+            line-height: 1.35;
+        }
+        
+        .summary {
+            font-size: 9.5pt;
+            text-align: justify;
+            margin-bottom: 4pt;
+            color: #2c2c2c;
+            line-height: 1.4;
+        }
+        
+        .skills-section {
+            font-size: 9.5pt;
+            margin-bottom: 3pt;
+            line-height: 1.35;
+        }
+        
+        .skills-label {
+            font-weight: 700;
+            display: inline;
+            color: #1a1a1a;
+        }
+        
+        .education-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            margin-top: 4pt;
+        }
+        
+        .education-title {
+            font-size: 10pt;
+            font-weight: 700;
+            color: #1a1a1a;
+        }
+        
+        .education-date {
+            font-size: 9.5pt;
+            color: #555;
+        }
+        
+        .volunteer-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            margin-top: 4pt;
+            margin-bottom: 1pt;
+        }
+        
+        .volunteer-title {
+            font-size: 10pt;
+            font-weight: 700;
+            color: #1a1a1a;
+        }
+        
+        .volunteer-date {
+            font-size: 9.5pt;
+            color: #555;
+        }
+        
+        .volunteer-org {
+            font-size: 9pt;
+            font-style: italic;
+            color: #555;
+            margin-bottom: 2pt;
+        }
+        
+        @media print {
+            body {
+                width: 210mm;
+                min-height: 297mm;
+                padding: 15mm 18mm;
+            }
+        }
+        
+        @media screen {
+            body {
+                box-shadow: 0 0 10px rgba(0,0,0,0.1);
+                margin: 20px auto;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Aditya Dash</h1>
+    <div class="contact-info">
+        Bhubaneswar, India | contact.adityadash@gmail.com | 8260540773
+    </div>
+    <div class="links">
+        adityadash-portfolio.vercel.app | linkedin.com/in/aditya-dash-421748311 | github.com/adi0tya
+    </div>
+
+    <h2>Professional Summary</h2>
+    <p class="summary">
+        Results-driven MERN Stack Developer specializing in building scalable, real-time web applications. Proven ability to develop robust RESTful APIs, optimize database performance, and deliver responsive full-stack solutions using React.js, Node.js, Express.js, and MongoDB. Passionate about building end-to-end systems that solve real-world problems with clean architecture and performance-focused engineering.
+    </p>
+
+    <h2>Projects</h2>
+    
+    <div class="project-header">
+        <div>
+            <span class="project-title">CampusSphere ERP</span>
+            <span class="project-subtitle">(Campus Management System)</span>
+        </div>
+    </div>
+    <div class="project-tech">React.js, Node.js, Express.js, MongoDB, JWT, Tailwind CSS</div>
+    <ul>
+        <li>Developed a production-level campus management ERP system with role-based dashboards for Admin, Faculty, Student, and Accountant, serving multiple user roles with secure authentication.</li>
+        <li>Implemented JWT-based authentication and authorization, attendance management, student and faculty management, and fee tracking with payment management.</li>
+        <li>Built a comprehensive notice board system, assignment submission and grading module, and dynamic timetable scheduling with conflict resolution.</li>
+        <li>Designed responsive enterprise UI with Tailwind CSS and integrated analytics dashboards with real-time reports for administrative decision-making.</li>
+    </ul>
+
+    <div class="project-header">
+        <div>
+            <span class="project-title">SyncSpace</span>
+            <span class="project-subtitle">(Collaborative Study Platform)</span>
+        </div>
+    </div>
+    <div class="project-tech">React.js, Node.js, Express, MongoDB, Socket.io, Tailwind CSS</div>
+    <ul>
+        <li>Built a full-stack real-time collaborative study platform with live chat, study rooms, and multi-user file sharing, supporting concurrent users seamlessly.</li>
+        <li>Implemented a Pomodoro productivity timer, voice communication, and dynamic multi-user session handling to enhance the study experience.</li>
+        <li>Developed a scalable Node.js and Express backend with MongoDB, optimized for low-latency performance under high-concurrency workloads.</li>
+        <li>Designed a fully responsive React.js frontend with Tailwind CSS, ensuring consistent and smooth experience across all devices and screen sizes.</li>
+    </ul>
+
+    <h2>Technical Skills</h2>
+    <div class="skills-section">
+        <span class="skills-label">Languages:</span> JavaScript, Python, C
+    </div>
+    <div class="skills-section">
+        <span class="skills-label">Frontend:</span> HTML, CSS, React.js, Tailwind CSS
+    </div>
+    <div class="skills-section">
+        <span class="skills-label">Backend:</span> Node.js, Express.js, REST APIs, JWT Authentication
+    </div>
+    <div class="skills-section">
+        <span class="skills-label">Database:</span> MongoDB
+    </div>
+    <div class="skills-section">
+        <span class="skills-label">Tools & Platforms:</span> Git, GitHub, VS Code
+    </div>
+
+    <h2>Education</h2>
+    <div class="education-header">
+        <span class="education-title">Birla Global University, Bachelor of Computer Applications (BCA)</span>
+        <span class="education-date">2024 – 2027</span>
+    </div>
+
+    <h2>Volunteer Experience</h2>
+    <div class="volunteer-header">
+        <span class="volunteer-title">Point of Contact (POC) – Spectra 2026 (BGMI LAN Tournament)</span>
+        <span class="volunteer-date">2026</span>
+    </div>
+    <div class="volunteer-org">Birla Global University, Bhubaneswar</div>
+    <ul>
+        <li>Managed complete event operations for 150+ participants, overseeing registrations, bracket scheduling, and on-ground logistics from start to finish.</li>
+    </ul>
+    
+    <script>
+        // Auto-print if query parameter ?print=true is present
+        if (window.location.search.includes('print=true')) {
+            window.addEventListener('load', () => {
+                setTimeout(() => {
+                    window.print();
+                }, 500);
+            });
+        }
+    </script>
+</body>
+</html>

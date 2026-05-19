@@ -184,13 +184,13 @@ export default function Hero() {
               </svg>
               See My Work
             </button>
-            <a href="/Aditya_Dash_Resume.pdf" download className="btn-secondary">
+            <button className="btn-secondary" onClick={() => scrollTo('#resume')}>
               <svg width="15" height="15" viewBox="0 0 15 15" fill="none">
-                <path d="M7.5 1v9M5 7.5l2.5 2.5 2.5-2.5" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round"/>
-                <path d="M1.5 11.5v1a1 1 0 001 1h10a1 1 0 001-1v-1" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round"/>
+                <rect x="2" y="2" width="11" height="11" rx="1.5" stroke="currentColor" strokeWidth="1.4"/>
+                <path d="M5 5h5M5 7.5h5M5 10h3" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round"/>
               </svg>
               Resume
-            </a>
+            </button>
             <button className="btn-secondary" onClick={() => scrollTo('#contact')}>
               Contact Me
             </button>

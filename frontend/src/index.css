@@ -291,3 +291,22 @@ img, svg, canvas, video {
     min-height: 40px;
   }
 }
+
+/* ── Resume section mobile optimization ── */
+@media (max-width: 640px) {
+  .resume-buttons {
+    flex-direction: column !important;
+    width: 100% !important;
+  }
+  .resume-buttons a {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+}
+
+@media (min-width: 641px) and (max-width: 900px) {
+  .resume-buttons {
+    justify-content: flex-start !important;
+    width: auto !important;
+  }
+}

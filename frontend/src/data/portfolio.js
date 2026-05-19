@@ -63,7 +63,7 @@ export const projects = [
     ],
     stack: ['React', 'Node.js', 'Express.js', 'MongoDB', 'JWT Authentication', 'Tailwind CSS'],
     github: 'https://github.com/adi0tya/CAMPUSSPHERE',
-    live: 'https://campussphere-orcin.vercel.app',
+    live: 'https://campussphere-psi.vercel.app/',
     highlight: true,
   },
   {
