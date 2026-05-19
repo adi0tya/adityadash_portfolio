@@ -58,7 +58,7 @@ export default function About() {
   const inView = useInView(ref, { once: true, margin: '-80px' })
 
   return (
-    <section id="about" className="relative py-28 px-4" ref={ref}>
+    <section id="about" className="relative py-24 px-4" ref={ref}>
       <div className="absolute inset-0 pointer-events-none" style={{
         background: 'radial-gradient(ellipse 55% 45% at 75% 50%, rgba(201,162,39,0.04) 0%, transparent 70%)',
       }} />

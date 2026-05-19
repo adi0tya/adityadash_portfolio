@@ -14,21 +14,21 @@ export default function Resume() {
   const inView = useInView(ref, { once: true, margin: '-60px' })
 
   return (
-    <section id="resume" className="relative py-20 px-4" ref={ref}>
+    <section id="resume" className="relative py-24 px-4" ref={ref}>
       <div className="absolute inset-0 pointer-events-none" style={{
         background: 'radial-gradient(ellipse 60% 50% at 50% 50%, rgba(201,162,39,0.06) 0%, transparent 80%)',
       }} />
 
       <div className="section-container">
         {/* Header */}
-        <div style={{ marginBottom: '40px' }}>
+        <div style={{ marginBottom: '48px' }}>
           <motion.p className="section-label"
             variants={fadeUp} initial="hidden" animate={inView ? 'visible' : 'hidden'} custom={0}>
             Resume
           </motion.p>
           <motion.h2
             variants={fadeUp} initial="hidden" animate={inView ? 'visible' : 'hidden'} custom={0.1}
-            style={{ fontSize: 'clamp(1.8rem, 4vw, 2.8rem)', fontWeight: 700, lineHeight: 1.05, margin: '0 0 16px' }}
+            style={{ fontSize: 'clamp(2rem, 5vw, 3.2rem)', fontWeight: 700, lineHeight: 1.05, margin: '0 0 16px' }}
           >
             <span style={{ color: 'var(--text-primary)' }}>PROFESSIONAL </span>
             <span style={{ color: 'rgba(255,255,255,0.15)' }}>CREDENTIALS</span>
@@ -37,32 +37,46 @@ export default function Resume() {
             variants={fadeUp} initial="hidden" animate={inView ? 'visible' : 'hidden'} custom={0.2} />
         </div>
 
-        {/* Premium Recruiter Hub Card */}
+        {/* Premium Recruiter Hub Card — matches FeaturedCard in Projects.jsx */}
         <motion.div
           variants={fadeUp} initial="hidden" animate={inView ? 'visible' : 'hidden'} custom={0.3}
           style={{
-            background: 'linear-gradient(135deg, rgba(13,17,23,0.85) 0%, rgba(8,10,16,0.95) 100%)',
-            border: '1px solid rgba(201,162,39,0.16)',
+            position: 'relative',
             borderRadius: '24px',
-            padding: '40px clamp(20px, 5vw, 48px)',
+            overflow: 'hidden',
+            background: 'rgba(10,12,20,0.92)',
+            border: '1px solid rgba(201,162,39,0.2)',
+            boxShadow: '0 28px 80px rgba(0,0,0,0.6), inset 0 1px 0 rgba(201,162,39,0.1)',
             backdropFilter: 'blur(24px)',
             WebkitBackdropFilter: 'blur(24px)',
-            boxShadow: '0 25px 60px rgba(0,0,0,0.5), inset 0 1px 0 rgba(255,255,255,0.03)',
-            position: 'relative',
-            overflow: 'hidden',
+            padding: '40px clamp(20px, 5vw, 48px)',
           }}
         >
-          {/* Top Decorative Line */}
+          {/* Top Decorative Line — matches FeaturedCard top line */}
           <div style={{
             position: 'absolute',
             top: 0,
             left: 0,
             right: 0,
             height: '2px',
-            background: 'linear-gradient(90deg, transparent, var(--gold) 50%, transparent)',
+            background: 'linear-gradient(90deg, transparent, var(--gold) 25%, var(--gold-light) 50%, var(--gold) 75%, transparent)',
+          }} />
+
+          {/* Ambient glow inside card */}
+          <div style={{
+            position: 'absolute',
+            top: '-80px',
+            right: '-80px',
+            width: '320px',
+            height: '320px',
+            borderRadius: '50%',
+            background: 'radial-gradient(circle, rgba(201,162,39,0.09) 0%, transparent 70%)',
+            pointerEvents: 'none'
           }} />
 
           <div style={{
+            position: 'relative',
+            zIndex: 2,
             display: 'flex',
             justifyContent: 'space-between',
             alignItems: 'center',
