@@ -14,32 +14,15 @@ export default function Resume() {
   const inView = useInView(ref, { once: true, margin: '-60px' })
 
   return (
-    <section id="resume" className="relative py-24 px-4" ref={ref}>
+    <section id="resume" className="relative py-28 px-4" ref={ref}>
       <div className="absolute inset-0 pointer-events-none" style={{
         background: 'radial-gradient(ellipse 60% 50% at 50% 50%, rgba(201,162,39,0.06) 0%, transparent 80%)',
       }} />
 
       <div className="section-container">
-        {/* Header */}
-        <div style={{ marginBottom: '48px' }}>
-          <motion.p className="section-label"
-            variants={fadeUp} initial="hidden" animate={inView ? 'visible' : 'hidden'} custom={0}>
-            Resume
-          </motion.p>
-          <motion.h2
-            variants={fadeUp} initial="hidden" animate={inView ? 'visible' : 'hidden'} custom={0.1}
-            style={{ fontSize: 'clamp(2rem, 5vw, 3.2rem)', fontWeight: 700, lineHeight: 1.05, margin: '0 0 16px' }}
-          >
-            <span style={{ color: 'var(--text-primary)' }}>PROFESSIONAL </span>
-            <span style={{ color: 'rgba(255,255,255,0.15)' }}>CREDENTIALS</span>
-          </motion.h2>
-          <motion.div className="gold-divider"
-            variants={fadeUp} initial="hidden" animate={inView ? 'visible' : 'hidden'} custom={0.2} />
-        </div>
-
         {/* Premium Recruiter Hub Card — matches FeaturedCard in Projects.jsx */}
         <motion.div
-          variants={fadeUp} initial="hidden" animate={inView ? 'visible' : 'hidden'} custom={0.3}
+          variants={fadeUp} initial="hidden" animate={inView ? 'visible' : 'hidden'} custom={0.1}
           style={{
             position: 'relative',
             borderRadius: '24px',
@@ -50,6 +33,8 @@ export default function Resume() {
             backdropFilter: 'blur(24px)',
             WebkitBackdropFilter: 'blur(24px)',
             padding: '40px clamp(20px, 5vw, 48px)',
+            marginTop: '24px',
+            marginBottom: '24px',
           }}
         >
           {/* Top Decorative Line — matches FeaturedCard top line */}
